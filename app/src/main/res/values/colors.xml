@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#99cc99</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="goal">#477443</color>
+    <color name="foul">#005b96</color>
+    <color name="yellowcard">#fbe68b</color>
+    <color name="redcard">#e9003a</color>
+    <color name="newgame">#008080</color>
+
+</resources>
