@@ -6,7 +6,14 @@ import android.view.View;
 import android.widget.TextView;
 
 public class Football extends AppCompatActivity {
-int goalTeam1,goalTeam2,foulTeam1,foulTeam2,yellowCardTeam1,yellowCardTeam2,readCardTeam1,readCardTeam2;
+int goalTeam1=0
+        ,goalTeam2=0
+        ,foulTeam1=0
+        ,foulTeam2=0
+        ,yellowCardTeam1=0
+        ,yellowCardTeam2=0
+        ,readCardTeam1=0
+        ,readCardTeam2=0;
 TextView goalT1,foulT1,yellowCareT1,redCardT1,goalT2,foulT2,yellowCareT2,redCardT2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,24 +30,12 @@ TextView goalT1,foulT1,yellowCareT1,redCardT1,goalT2,foulT2,yellowCareT2,redCard
         foulT2=(TextView) findViewById(R.id.foul2);
         yellowCareT2=(TextView) findViewById(R.id.yellow2);
         redCardT2=(TextView) findViewById(R.id.red2);
-
-        //initialise variable
-        goalTeam1=0;
-        goalTeam2=0;
-        foulTeam1=0;
-        foulTeam2=0;
-        yellowCardTeam1=0;
-        yellowCardTeam2=0;
-        readCardTeam1=0;
-        readCardTeam2=0;
     }
-
     public void butGoalTeam1(View view) {
         goalTeam1++;
         goalT1.setText(goalTeam1+"");
 
     }
-
     public void butFoulTeam1(View view) {
         foulTeam1++;
         foulT1.setText(foulTeam1+"");
@@ -56,8 +51,6 @@ TextView goalT1,foulT1,yellowCareT1,redCardT1,goalT2,foulT2,yellowCareT2,redCard
         redCardT1.setText(readCardTeam1+"");
     }
 
-
-
     public void butGoalTeam2(View view) {
         goalTeam2++;
         goalT2.setText(goalTeam2+"");
@@ -67,7 +60,6 @@ TextView goalT1,foulT1,yellowCareT1,redCardT1,goalT2,foulT2,yellowCareT2,redCard
         foulTeam2++;
         foulT2.setText(foulTeam2+"");
     }
-
     public void butYellowCardTeam2(View view) {
         yellowCardTeam2++;
         yellowCareT2.setText(yellowCardTeam2+"");
@@ -78,8 +70,7 @@ TextView goalT1,foulT1,yellowCareT1,redCardT1,goalT2,foulT2,yellowCareT2,redCard
         redCardT2.setText(readCardTeam2+"");
     }
 
-
-
+    // Rest button
     public void butNewGame(View view) {
         goalTeam1=0;
         goalTeam2=0;
