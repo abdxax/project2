@@ -6,15 +6,22 @@ import android.view.View;
 import android.widget.TextView;
 
 public class Football extends AppCompatActivity {
-int goalTeam1=0
-        ,goalTeam2=0
-        ,foulTeam1=0
-        ,foulTeam2=0
-        ,yellowCardTeam1=0
-        ,yellowCardTeam2=0
-        ,readCardTeam1=0
-        ,readCardTeam2=0;
-TextView goalT1,foulT1,yellowCareT1,redCardT1,goalT2,foulT2,yellowCareT2,redCardT2;
+int goalTeam1=0;
+int goalTeam2=0;
+int foulTeam1=0;
+int foulTeam2=0;
+int yellowCardTeam1=0;
+int yellowCardTeam2=0;
+int readCardTeam1=0;
+int readCardTeam2=0;
+TextView goalT1;
+TextView foulT1;
+TextView yellowCareT1;
+TextView redCardT1;
+TextView goalT2;
+TextView foulT2;
+TextView yellowCareT2;
+TextView redCardT2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
